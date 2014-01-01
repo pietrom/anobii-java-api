@@ -1,0 +1,27 @@
+BASE URL http://api.anobii.com
+
+AUTHENTICATION
+api_key=bbc152906134de3f21324c3b3aef4684
+api_sig=6a6567d33e2f28d45d4f003df339ce66
+
+GET SHELF
+/shelf/getSimpleShelf
+user_id=amicofragile
+lang=en,it
+limit=10
+start=1010
+
+<shelf user_id="amicofragile" type="all"><items><item id="BWpba1IwAjFRZA49VGc=" progress="Finished" start_date="" end_date=""/><item id="UToBOQZpBzECNgsx" progress="Finished" start_date="" end_date=""/><item id="UjkMPgVlU2AMPQoy" progress="Reference" start_date="" end_date=""/><item id="XDEPOgFmBDJQbFti" progress="Finished" start_date="1262275200" end_date="1282924800"/><item id="BmxYblc0U2NVZQkz" progress="Finished" start_date="" end_date=""/><item id="Vz0MOQBmCDo=" progress="Finished" start_date="" end_date=""/><item id="VT5fagdoBzcFMw80" progress="Reference" start_date="" end_date=""/><item id="B2wNPghrBjUDPww0" progress="Finished" start_date="" end_date=""/></items></shelf>
+
+GET ITEM INFO
+/item/getInfo
+item_id=B2wNPghrBjUDPww0
+
+<items><item id="B2wNPghrBjUDPww0" title="Castelli di rabbia" subtitle="" format="Paperback" language="it" cover="http://image.anobii.com/anobi/image_book.php?type=3&item_id=01ce371bed431359e7&time=0"><contributors><contributor id="Vj4IPQBgVG4GMA=="/></contributors></item></items>
+
+GET CONTRIBUTOR INFO
+/contributor/getInfo
+item_id=B2wNPghrBjUDPww0
+contributor_id=Vj4IPQBgVG4GMA==
+
+<contributor><roles><role id="Vj4IPQBgVG4GMA==" role="Author" name="Alessandro Baricco"/></roles></contributor>
