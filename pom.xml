@@ -51,6 +51,17 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.0.0.RELEASE</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -98,7 +109,7 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-				    <relativizeDecorationLinks>false</relativizeDecorationLinks>
+					<relativizeDecorationLinks>false</relativizeDecorationLinks>
 					<reportPlugins>
 						<plugin>
 							<groupId>org.apache.maven.plugins</groupId>
@@ -155,8 +166,8 @@
 							<artifactId>maven-checkstyle-plugin</artifactId>
 							<version>2.6</version>
 							<configuration>
-							    <configLocation>conf/jarachis-checkstyle.xml</configLocation>
-							    <enableRulesSummary>false</enableRulesSummary>
+								<configLocation>conf/jarachis-checkstyle.xml</configLocation>
+								<enableRulesSummary>false</enableRulesSummary>
 							</configuration>
 						</plugin>
 						<plugin>
@@ -167,7 +178,8 @@
 								<argLine>-Xmx256m</argLine>
 								<argLine>-XX:MaxPermSize=256m</argLine>
 							</configuration>
-							<!-- Usually findbugs needs a lot of memory, change these values if needed. -->
+							<!-- Usually findbugs needs a lot of memory, change these values if 
+								needed. -->
 						</plugin>
 					</reportPlugins>
 				</configuration>
